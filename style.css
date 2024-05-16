@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Aldrich');
+#text {
+  font-family: 'Aldrich', sans-serif;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 255, 255);
+  background-color: rgb(84, 84, 84);
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+body {
+  background-color: #070f2b !important;
+  color: #80cbc4 !important;
+  font-family: 'Aldrich', sans-serif !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #80cbc4 !important;
+  margin-top: 10%;
+}
+
+.navbar {
+  margin-left: -10%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar stays above other content */
+  transition: background-color 0.3s, opacity 0.3s; /* Smooth transition for background color and opacity */
+}
+
+.navbar.scrolled {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Adjust the background color and opacity as needed */
+}
+
+.nav-link {
+  font-family: 'Aldrich', sans-serif;
+
+  margin-left: 210px;
+}
+
+/* CSS */
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #8ef1f1 0,
+    #356876 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Aldrich', sans-serif !important;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #1b1a55 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #1b1a55 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #1b1a55 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #1b1a55 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.img-size {
+  width: 100%;
+  height: 10vw;
+  object-fit: cover;
+}
+
+.item {
+  opacity: 0;
+  transform: translateY(50px); /* Start position below */
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.item.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.item1 {
+  opacity: 0;
+  transform: translateY(50px); /* Start position below */
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.item1.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.row.mt-5 {
+  margin-bottom: 100px;
+}
+
+.modal-body {
+  margin-left: -200px;
+}
+@media (max-width: 480px) {
+  .intro-row {
+    flex-direction: column-reverse; /* Stack columns in reverse order */
+  }
+
+  #gif {
+    width: 100%;
+    margin-bottom: -60%;
+  }
+  #intro {
+    text-align: center; /* Center text for better appearance on mobile */
+    margin-bottom: 50px;
+  }
+  .media-row {
+    margin: auto;
+    margin-left: 80px;
+    width: 100%;
+    padding: 10px;
+  }
+  .row.mt-5 {
+    width: 80%;
+    margin-bottom: 100px;
+  }
+  #git {
+    margin-left: -10px;
+  }
+  #insta {
+    margin-left: -10px;
+  }
+  #tweet {
+    margin-left: 50px;
+  }
+  #link {
+    margin-left: 20px;
+  }
+
+  .navbar-toggler-icon {
+    margin-left: -250px;
+    border-radius: 20%;
+    background: #7d7d7d;
+  }
+
+  .skills .col img {
+    width: 15% !important; /* Make images take up 45% of the container width */
+    margin-bottom: 10px; /* Adjust bottom margin for better spacing */
+  }
+}
